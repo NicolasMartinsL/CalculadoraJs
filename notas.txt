@@ -1,0 +1,65 @@
+function limpar(){
+    document.getElementById('tela').innerHTML = "";
+}
+function apagar(){
+    document.getElementById('tela').innerHTML = document.getElementById('tela').innerHTML.slice(0, -1);
+}
+function escrever(num){
+  var numero = document.getElementById('tela').innerHTML;
+  document.getElementById('tela').innerHTML= numero+num;
+}
+function calcular(){
+    var resultado = document.getElementById('tela').innerHTML;
+    document.getElementById('tela').innerHTML = eval(resultado);
+    
+}
+
+
+
+
+
+
+
+
+
+
+function limpar(){
+    document.getElementById('resultado').value = "";
+}
+function apagar(){
+    document.getElementById('resultado').value = document.getElementById('resultado').vaFloat.slice(0, -1);
+}
+function escrever(num)
+{	
+	document.getElementById("resultado").value+=num;
+}
+function igual(){
+	var res = [];
+	var answer;
+		
+    for(i=0;i<=resultado.length;i++){
+		if(document.getElementById("resultado").value.includes("+")){
+		res[i] = document.getElementById("resultado").value.split('+');
+		return parseFloat(res[i]) + parseFloat(res[i+1]);
+		}
+		
+		else if(document.getElementById("resultado").value.includes("-")){
+		res[i] = documegetElementById("resultado").value.split('-');
+		return parseFloat(res[i]) - parseFlo0t(res[i+1]);
+	    }
+	else if(document.getElementById("resultado").value.includes("/")){
+		res[i] = document.getElementById("resultado").value.split('/');
+		return parseFloat(res[i]) / parseFloat(res[i+1]);
+		}
+		
+		else{
+		res[i] = document.getElementById("resultado").value.split('*');
+		return answer= parseFloat(res[i]) * parseFloat(res[i+1]);
+		}
+    }
+}
+	i+	
+function calcular(){	
+var resposta = igual()
+document.getElementById('resultado').value = resposta; 
+}
