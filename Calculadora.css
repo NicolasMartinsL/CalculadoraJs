@@ -9,7 +9,7 @@ body{
 #corpo{
     text-align: center;
     padding-top: 180px;
-    /*border-image: url(https://www.sonner.com.br/assets/images/favicon.ico) 36.4px;*/
+    border-image: url(https://www.sonner.com.br/assets/images/favicon.ico) 36.4px;
 }
 button{
     height: 50px;
@@ -53,7 +53,11 @@ button{
     background-color: rgba(0, 0, 0, 0.500);
     color: rgb(0, 0, 255);
 }
-#tela{
+.linha{
+    background-image: url(https://www.sonner.com.br/assets/images/favicon.ico);
+    height: 46.4px;
+}
+#resultado{
     height: 50px;
     width: 204px;
     background-color: black;
@@ -65,8 +69,9 @@ button{
     display: inline-block;
     padding-top: 10px;
     border-radius: 10px;
+    text-align: center;
 }
-.linha{
-    background-image: url(https://www.sonner.com.br/assets/images/favicon.ico);
-    height: 46.4px;
+#teste{
+    display: none;
+    font-size: 15px;
 }
