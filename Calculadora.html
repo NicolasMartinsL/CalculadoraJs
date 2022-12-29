@@ -11,9 +11,7 @@
 <body>
     <div class="linha"></div>
     <div id="corpo">
-        <div id="tel">
-            <p id="tela"></p>
-        </div>
+        <input type="text" disabled="disabled" id="resultado">
         <div>
             <button id="blimpar" onclick="limpar()">Limpar</button>
             <button id="bapagar" onclick="apagar()">Apagar</button>
@@ -23,29 +21,30 @@
             <button class="numeros" onclick="escrever('7')" > 7</button>
             <button class="numeros" onclick="escrever('8')" > 8</button>
             <button class="numeros" onclick="escrever('9')" > 9</button>
-            <button id="bdiv" onclick="escrever('/')" >÷</button>
+            <button id="bdiv" value="/" onclick="escrever('/')" >÷</button>
         </div>
         <div>
             <button class="numeros" onclick="escrever('4')">4</button>
             <button class="numeros" onclick="escrever('5')" > 5</button>
             <button class="numeros" onclick="escrever('6')" > 6</button>
-            <button id="bmul" onclick="escrever('*')" >x</button>
+            <button id="bmul" value="*" onclick="escrever('*')" >x</button>
         </div>
         <div>
-            <button class="numeros" onclick="escrever('1')" > 1</button>
+            <button class="numeros" value="1" onclick="escrever('1')" > 1</button>
             <button class="numeros" onclick="escrever('2')" > 2</button>
             <button class="numeros" onclick="escrever('3')" > 3</button>
-            <button id="bmen" onclick="escrever('-')" >-</button>
+            <button id="bmen" value="-" onclick="escrever('-')" >-</button>
         </div>
         <div>
             <button class="numeros" onclick="escrever('0')" >0</button>
             <button id="bpon" onclick="escrever('.')" >.</button>
-            <button id="bigu" onclick="calcular()" >=</button>
-            <button id="bmai" onclick="escrever('+')" >+</button>
+            <button id="bigu" onclick="igual()" >=</button>
+            <button id="bmai" value="+" onclick="escrever('+')" >+</button>
         </div>
+        <button id="teste" onclick="teste()">TST</button>
     </div>
 
-    <script src="calculadora.js"></script>
+    <script src="calculadoraF.js"></script>
     
 </body>
 </html>
