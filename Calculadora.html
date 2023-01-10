@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="Calculadora.css">
+    <link rel="stylesheet" href="calculadora.css">
     <link rel="shortcut icon" href="https://www.sonner.com.br/assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -18,33 +18,33 @@
 
         </div>
         <div>
-            <button class="numeros" onclick="escrever('7')" > 7</button>
-            <button class="numeros" onclick="escrever('8')" > 8</button>
-            <button class="numeros" onclick="escrever('9')" > 9</button>
-            <button id="bdiv" value="/" onclick="escrever('/')" >÷</button>
+            <button class="numeros" onclick="escrever('7')"> 7</button>
+            <button class="numeros" onclick="escrever('8')"> 8</button>
+            <button class="numeros" onclick="escrever('9')"> 9</button>
+            <button id="divisao" class="operadores" disabled value="/" onclick="escrever('/')" >÷</button>
         </div>
         <div>
-            <button class="numeros" onclick="escrever('4')">4</button>
-            <button class="numeros" onclick="escrever('5')" > 5</button>
-            <button class="numeros" onclick="escrever('6')" > 6</button>
-            <button id="bmul" value="*" onclick="escrever('*')" >x</button>
+            <button class="numeros" onclick="escrever('4')"> 4</button>
+            <button class="numeros" onclick="escrever('5')"> 5</button>
+            <button class="numeros" onclick="escrever('6')"> 6</button>
+            <button id="multiplicacao" class="operadores" disabled value="*" onclick="escrever('*')" >x</button>
         </div>
         <div>
             <button class="numeros" value="1" onclick="escrever('1')" > 1</button>
-            <button class="numeros" onclick="escrever('2')" > 2</button>
-            <button class="numeros" onclick="escrever('3')" > 3</button>
-            <button id="bmen" value="-" onclick="escrever('-')" >-</button>
+            <button class="numeros" onclick="escrever('2')"> 2</button>
+            <button class="numeros" onclick="escrever('3')"> 3</button>
+            <button id="subtracao" class="operadores" disabled value="-" onclick="escrever('-')" >-</button>
         </div>
         <div>
-            <button class="numeros" onclick="escrever('0')" >0</button>
-            <button id="bpon" onclick="escrever('.')" >.</button>
+            <button class="numeros" onclick="escrever('0')">0</button>
+            <button id="ponto" disabled onclick="escrever('.')">.</button>
             <button id="bigu" onclick="igual()" >=</button>
-            <button id="bmai" value="+" onclick="escrever('+')" >+</button>
+            <button id="adicao" class="operadores" disabled value="+" onclick="escrever('+')">+</button>
         </div>
         <button id="teste" onclick="teste()">TST</button>
     </div>
 
-    <script src="Calculadora.js"></script>
+    <script src="calculadora.js"></script>
     
 </body>
 </html>
